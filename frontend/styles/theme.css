@@ -1,0 +1,23 @@
+@layer utilities {
+  .bg-cinematic {
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(24, 39, 70, 0.35), transparent 40%),
+      radial-gradient(circle at 80% 10%, rgba(72, 24, 36, 0.25), transparent 35%),
+      radial-gradient(circle at 40% 80%, rgba(19, 45, 33, 0.35), transparent 45%);
+  }
+
+  .bg-grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='8' cy='12' r='1'/%3E%3Ccircle cx='36' cy='24' r='1'/%3E%3Ccircle cx='72' cy='10' r='1'/%3E%3Ccircle cx='104' cy='48' r='1'/%3E%3Ccircle cx='18' cy='78' r='1'/%3E%3Ccircle cx='92' cy='90' r='1'/%3E%3Ccircle cx='122' cy='102' r='1'/%3E%3Ccircle cx='56' cy='114' r='1'/%3E%3Ccircle cx='34' cy='60' r='1'/%3E%3Ccircle cx='114' cy='18' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .glass-nav {
+    background: linear-gradient(180deg, rgba(7, 9, 11, 0.72), rgba(7, 9, 11, 0.35));
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+}
