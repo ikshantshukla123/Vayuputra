@@ -1,14 +1,12 @@
-import Hero from "../components/Hero";
-import FeatureCard from "../components/FeatureCard";
-import FadeIn from "../components/FadeIn";
-import { FEATURES } from "../lib/constants";
+import { HeroSection, FeatureHighlights, CallToAction } from "@/features/landing";
+import FadeIn from "@/components/FadeIn";
 
 export const dynamic = "force-static";
 
 export default function Home() {
   return (
     <main className="bg-black">
-      <Hero />
+      <HeroSection />
 
       {/* Divider glow */}
       <div className="relative h-px w-full">
@@ -31,12 +29,13 @@ export default function Home() {
             </p>
           </FadeIn>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {FEATURES.map((feature, index) => (
-              <FeatureCard key={feature.title} {...feature} index={index} />
-            ))}
-          </div>
+          <FeatureHighlights />
         </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mx-auto mt-16 w-full max-w-6xl px-6 pb-20 sm:px-10">
+        <CallToAction />
       </section>
     </main>
   );

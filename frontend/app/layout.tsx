@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Space_Grotesk } from "next/font/google";
-import Navbar from "../components/Navbar";
-import PageTransition from "../components/PageTransition";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import PageTransition from "@/components/layout/PageTransition";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Navbar />
         <PageTransition>{children}</PageTransition>
+        <Footer />
       </body>
     </html>
   );
