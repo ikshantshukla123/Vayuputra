@@ -1,3 +1,4 @@
+export { default as AQIMap } from "./AQIMap";
 export { default as CitySnapshot } from "./CitySnapshot";
 export { default as AQIHeatmap } from "./AQIHeatmap";
 export { default as HistoricalTrends } from "./HistoricalTrends";

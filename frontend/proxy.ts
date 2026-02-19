@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(_request: NextRequest) {
+export default function proxy(_request: NextRequest) {
   // Placeholder — add auth checks, redirects, or analytics here
   return NextResponse.next();
 }
